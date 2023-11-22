@@ -69,10 +69,14 @@
         /*border-radius: 25% !important;*/
     }
     #head-description{
-        margin: 5% 10%;
+        margin: 5% 0 !important;
+        margin-bottom: 100px !important;
     }
     #tech-div img{
         width:100% !important;
+    }
+    #main-description{
+        padding: 0 5% !important;
     }
     #main-description h5{
         margin-top: 40px !important;
@@ -90,6 +94,11 @@
         display:flex !important;
         width:100% !important;
     }
+    #v-pills-tabContent{
+        width: 100% !important;
+        font-size: 150% !important;
+        margin-bottom: 10% !important;
+    }
     #v-pills-tab{
         justify-content: center !important;
         justify-items: center !important;
@@ -97,6 +106,7 @@
         display:flex !important;
         flex-direction: column !important;
         width:100% !important;
+        font-size: 200% !important;
     }
 
     .pro{

@@ -61,17 +61,35 @@ body {
     width:100%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     #nav-bar{
         display:flex;
         flex-direction: column;
-        padding:10px 0;
+        padding:0 !important;
+        width:100% !important;
+    }
+    #nav-bar .nav{
+        display:flex !important;
+
+        justify-content: center !important;
+    }
+    #nav-bar .nav img{
+        width:50% !important;
+        height:auto !important;
+    }
+    #nav-bar-right a{
+        font-size: 200% !important;
+    }
+    #contact-me h3{
+        font-size: 200% !important;
+    }
+    #contact-me i{
+        font-size: 150% !important;
     }
 
 }
 
 #contact-me{
-
     bottom: 0;
     background-color: #FFDC00;
     width:100%;

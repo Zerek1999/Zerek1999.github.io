@@ -24,4 +24,4 @@ def kaggle_data_analysis_modeling():
     return render_template('kaggleDataAnalysisModeling.html')
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000)
+    app.run(debug=True)

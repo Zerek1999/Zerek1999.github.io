@@ -21,20 +21,21 @@
     clip-path: polygon(0 0, 30% 0, 50% 80%, 20% 90%, 0 70%, 0 0); /* 修正形状，创建斜线分割 */
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1100px){
     #my-info{
         min-width: 320px !important;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 800px;
+        height: 1500px !important;
     }
     #head-description{
-        display:flex;
-        justify-items: center;
-        justify-content: center;
-        width:80% !important;
+        display:flex !important;
+        justify-items: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width:90% !important;
         margin-top: 0 !important;
         position: relative;
         z-index: 1;
@@ -42,8 +43,12 @@
     }
 
     #description-text{
-        margin-top: 30% !important;
+        margin-top: 20% !important;
         width:100% !important;
+        display:flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
     #description-text h1{
@@ -55,18 +60,20 @@
     }
 
     #mobile-my-photo{
-        width:auto !important;
-        height:200px !important;
+        width:50% !important;
+        height:50% !important;
         display: flex !important;
         visibility: visible !important;
-        justify-content: center;
+        justify-content: center !important;
         border-radius: 50% !important;
         overflow: hidden !important;
         margin-bottom: 15% !important;
+        justify-items:center !important;
+        align-items: center !important;
     }
     #mobile-my-photo img{
-        width:200px !important;
-        height:200px !important;
+        width:100% !important;
+        height:100% !important;
         border-radius: 50% !important;
         object-fit: cover !important;
     }
@@ -78,6 +85,7 @@
         text-align: center;
     }
     #my-education{
+        padding:5% 5% !important;
         align-items: center !important;
         text-align: center !important;
         justify-content: center !important;
@@ -91,12 +99,49 @@
 
     #quadrangle{
         width:100% !important;
-        height: 200px !important;
+        height: 400px !important;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0) !important;
     }
+
+    #quadrangle img{
+        height: 100% !important;
+    }
+
+    #my-skills hr{
+        width:90% !important;
+    }
+
+    #skill-div{
+        padding:0 !important;
+        height:600px !important;
+    }
+    /*#my-radar{*/
+    /*    width:70% !important;*/
+    /*}*/
+    /*#my-radar #radarChart{*/
+    /*    width:50% !important;*/
+    /*    height:auto !important;*/
+    /*}*/
+
     #skills-description{
         width: 100% !important;
     }
+
+    #my-projects{
+        padding: 0 !important;
+    }
+    #my-projects hr{
+        width: 90% !important;
+
+    }
+    .project{
+        width:80% !important;
+        height:auto !important;
+    }
+    .project a{
+        font-size: 150% !important;
+    }
+
 
 
 }
@@ -106,7 +151,7 @@
     justify-items: center;
     justify-content: space-between;
     width:70%;
-    margin-top: 300px;
+    margin-top: 20%;
     position: relative;
     z-index: 1;
 }
@@ -131,8 +176,9 @@
 }
 
 #my-photo-div {
-    width: 500px; /* 设置容器的宽度 */
-    height: 500px; /* 设置容器的高度 */
+    width: 50%; /* 设置容器的宽度 */
+    margin-left: 10%;
+    height: 80%; /* 设置容器的高度 */
     clip-path: polygon(40% 0, 100% 10%, 90% 80%, 10% 100%, 0 20%, 40% 0);
     /*overflow: hidden;*/
     /*left: 70%; !* 将容器左边缘移动到父容器的50%位置 *!*/
