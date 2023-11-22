@@ -1,0 +1,93 @@
+{% extends "Base.html" %}
+
+{%  block title %}
+    Woolworth&coles Trading And Management System
+{%  endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/kaggleDataAnalysisModeling.css')}}">
+
+{% endblock %}
+
+{% block body %}
+    <div id="head-div">
+        <img id='small-title-img' style='display:none' src="{{ url_for('static', filename='images/kaggle.png') }}" alt="kaggle">
+        <div id="head-description">
+            <h1>Kaggle数据分析与建模</h1>
+            <h3>Kaggle平台数据分析项目&计算机视觉任务&机器学习模型</h3>
+        </div>
+        <img src="{{ url_for('static', filename='images/kaggle.png') }}" alt="kaggle">
+    </div>
+    <div id="main-description">
+
+    <div id='data-project-space' class="d-flex align-items-start">
+    <div style='width:20%;padding-right: 2%;' class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link pro active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">计算机视觉</button>
+        <button class="nav-link pro" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">机器学习</button>
+        <button class="nav-link pro" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">数据分析</button>
+        <button class="nav-link pro" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Kaggle课程证书</button>
+        <button class="nav-link pro" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+    </div>
+        <hr style="width: 80%; display:none">
+    <div style='width:80%;' class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+            <h5>&#8226;使用SIFT和BFMatcher，计算两张图片关键点的坐标和距离，计算所有关键点距离并结合设定的比率实现KNN临近算法，从而实现两照片的无瑕拼接。</h5>
+            <div style="display:flex;">
+            <img style="width:33%; height:auto;" src="{{ url_for('static', filename='images/KNNjob1.png') }}" alt="KNNstep1">
+            <img style="width:33%; height:auto;" src="{{ url_for('static', filename='images/KNNjob2.png') }}" alt="KNNstep2">
+            <img style="width:33%; height:auto;" src="{{ url_for('static', filename='images/KNNjobresult.png') }}" alt="KNNresult">
+            </div>
+            <h5>&#8226;图像分割算法：Otsu Thresholding, Isodata Thresholding, Triangle Thresholding。</h5>
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/comp9517ass.png') }}" alt="Thresholding algorithm">
+            <h5>&#8226;Yolo实现自定义数据集图像检测和分类任务</h5>
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/yoloresult1.png') }}" alt="yoloresult1">
+            <div>
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/yoloresult2.png') }}" alt="yoloresult2">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/yoloresult4.jpg') }}" alt="yoloresult4">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/yoloresult3.jpg') }}" alt="yoloresult3">
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+            <h5>&#8226;使用Keras搭建设计四种MLP多层感知机去拟合数据，观测模型的损失下降和准确率提升过程。</h5>
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/MLP.png') }}" alt="MLP">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/MLPLoss.png') }}" alt="MLPLoss">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/MLPAcc.png') }}" alt="MLPAcc">
+            <h5>&#8226;搭建并对比测观测对比梯度下降和随机梯度下降。</h5>
+            ACC
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/GD.png') }}" alt="GD">
+            Loss
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/SGD.png') }}" alt="SGD">
+            <h5>&#8226;搭建并对比测试固定步长和自适应步长算法模型的学习情况。</h5>
+            Fixed Step
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/FixedStep.png') }}" alt="FixedStep">
+            Adaptive Step
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/AdaptiveStep.png') }}" alt="AdaptiveStep">
+
+        </div>
+        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+            <h5>&#8226;数据维度相关性分析。</h5>
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/corr.png') }}" alt="corr">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/pairsplot.png') }}" alt="pairsplot">
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/Zerek1999 - Python.png') }}" alt="Python-kaggle">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/Zerek1999 - Pandas.png') }}" alt="Pandas-kaggle">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/Zerek1999 - Intro to Machine Learning.png') }}" alt="Intro to Machine Learning-kaggle">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/Zerek1999 - Intro to Deep Learning.png') }}" alt="Intro to Deep Learning-kaggle">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/Zerek1999 - Intermediate Machine Learning.png') }}" alt="Intermediate Machine Learning-kaggle">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/Zerek1999 - Data Visualization.png') }}" alt="Data Visualization-kaggle">
+            <img style="width:100%; height:auto;" src="{{ url_for('static', filename='images/Zerek1999 - Data Cleaning.png') }}" alt="Data Cleaning-kaggle">
+
+        </div>
+
+
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+    </div>
+</div>
+
+    </div>
+
+
+
+
+{%  endblock %}

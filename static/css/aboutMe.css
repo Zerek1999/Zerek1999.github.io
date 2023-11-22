@@ -1,0 +1,285 @@
+
+#my-info{
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 950px;
+    background-color: #FFDC00; /* 背景颜色，可以根据需要修改 */
+    justify-items: center;
+    justify-content: center;
+}
+
+#my-info::before{
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EEE9F7; /* 斜线的颜色，可以根据需要修改 */
+    clip-path: polygon(0 0, 30% 0, 50% 80%, 20% 90%, 0 70%, 0 0); /* 修正形状，创建斜线分割 */
+}
+
+@media only screen and (max-width: 900px){
+    #my-info{
+        min-width: 320px !important;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+    }
+    #head-description{
+        display:flex;
+        justify-items: center;
+        justify-content: center;
+        width:80% !important;
+        margin-top: 0 !important;
+        position: relative;
+        z-index: 1;
+        padding:0;
+    }
+
+    #description-text{
+        margin-top: 30% !important;
+        width:100% !important;
+    }
+
+    #description-text h1{
+        font-size: 300% !important;
+    }
+
+    #my-photo-div{
+        display:none;
+    }
+
+    #mobile-my-photo{
+        width:auto !important;
+        height:200px !important;
+        display: flex !important;
+        visibility: visible !important;
+        justify-content: center;
+        border-radius: 50% !important;
+        overflow: hidden !important;
+        margin-bottom: 15% !important;
+    }
+    #mobile-my-photo img{
+        width:200px !important;
+        height:200px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+    }
+    #project-area{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #my-education{
+        align-items: center !important;
+        text-align: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+
+    #education-description{
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    #quadrangle{
+        width:100% !important;
+        height: 200px !important;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0) !important;
+    }
+    #skills-description{
+        width: 100% !important;
+    }
+
+
+}
+
+#head-description{
+    display:flex;
+    justify-items: center;
+    justify-content: space-between;
+    width:70%;
+    margin-top: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+#description-text{
+    width: 50%;
+}
+
+#head-description h1{
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+
+#head-description h3{
+    line-height: 1.5;
+}
+
+#head-description button{
+    margin-top:50px;
+    font-size: 20px;
+}
+
+#my-photo-div {
+    width: 500px; /* 设置容器的宽度 */
+    height: 500px; /* 设置容器的高度 */
+    clip-path: polygon(40% 0, 100% 10%, 90% 80%, 10% 100%, 0 20%, 40% 0);
+    /*overflow: hidden;*/
+    /*left: 70%; !* 将容器左边缘移动到父容器的50%位置 *!*/
+    /*transform: translateX(-50%); !* 通过transform属性校正，使容器居中 *!*/
+    z-index: 1;
+}
+
+#my-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*display: block;*/
+}
+
+#my-education{
+    padding: 5% 15% 4% 15%;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+}
+
+.bi-mortarboard{
+    font-size: 20px;
+}
+
+#education-description{
+    margin: 6% 2%;
+    width:70%;
+}
+
+#education-description h2{
+    line-height: 1.5;
+}
+
+#quadrangle{
+    width: 40%; /* 设置容器的宽度 */
+    height: auto; /* 设置容器的高度 */
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 20% 0);
+    padding-right: 2%;
+}
+
+#quadrangle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+#quadrangle img:hover{
+    transform: scale(1.2);
+}
+
+#my-skills{
+    width:100%;
+    background:white;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#my-skills hr{
+    width: 70%;
+}
+
+#skill-div{
+    width: 100%;
+    background-color: white;
+    padding: 0 15%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#skills-description{
+    width:60%;
+}
+#skills-description h2{
+    line-height: 1.5;
+}
+
+#my-projects{
+    display:flex;
+    width:100%;
+    height:100%;
+    background-color: white;
+    /*background-color: #FFDC00;*/
+    padding: 0 15%;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+#my-projects h2{
+    margin: 5% 2% 1% 2%;
+    font-weight: bolder;
+}
+
+#my-projects hr {
+    width:100%;
+}
+
+#my-projects #project-divs{
+    display:flex;
+    flex-wrap: wrap; /* 允许元素在一行上放不下时进行换行 */
+    /*flex-direction: row;*/
+    width:100%;
+    height:100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1% 10% 1%;
+}
+
+
+#my-projects #project-divs .project{
+    width: 30%;
+    min-width: 300px; /* 可以设置一个最大宽度，防止在较大屏幕上拉伸过多 */
+    height: 200px;
+    text-align: center;
+    margin: 40px 5px;
+}
+
+
+.proj-img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+}
+
+#my-projects #project-divs .project a{
+    padding: 2% 1%;
+    font-size: large;
+    font-weight: normal;
+    color: black;
+}
+
+#my-projects #project-divs .project a:hover{
+    padding: 2% 1%;
+    font-size: large;
+    font-weight: normal;
+    text-decoration: underline !important;  /* 使用正确的属性 */
+    text-decoration-color: #FFDC00 !important;
+}
+

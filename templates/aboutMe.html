@@ -1,0 +1,80 @@
+{% extends "Base.html" %}
+
+{%  block title %}
+    个人简介
+{%  endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutMe.css')}}">
+    <script src="{{ url_for('static', filename="js/aboutMe.js") }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div id="my-info">
+
+        <div id="head-description">
+
+            <div id="description-text">
+                <div id="mobile-my-photo" style="display: none"><img src="{{ url_for('static', filename='images/me.jpg') }}" alt="mobile-my-photo"></div>
+                <h1 id="about-me">个人简介</h1>
+                <h3 id="my-introduction">你好我叫蒋子浩，你可也可以叫我Zerek。我专注于IT技术开发和项目管理决策。</h3>
+                <button type="button" class="btn btn-dark"><i class="bi bi-arrow-right">下载我的简历</i></button>
+            </div>
+
+            <div id="my-photo-div">
+                <img id='my-photo' src="{{ url_for('static', filename='images/me.jpg') }}" alt="my life photo">
+            </div>
+        </div>
+
+    </div>
+    <div id="my-education">
+        <div id="education-description">
+            <h2>我毕业于澳大利亚新南威尔士大学（UNSW）。我拥有信息技术硕士学位，我的研究方向是数据科学与工程。</h2>
+        <a href="https://www.handbook.unsw.edu.au/postgraduate/programs/2024/8543?year=2024"><i class="bi bi-mortarboard">查看我的学位信息</i></a>
+        </div>
+        <div id="quadrangle">
+            <img src="{{ url_for('static', filename='images/quadrangle.jpg') }}" alt="UNSW quadrangle">
+        </div>
+    </div>
+
+
+    <div id="my-skills">
+        <hr>
+        <div id="skill-div">
+            <div id="my-radar" style="height: 300px; margin: 7% 2%">
+            <canvas id="radarChart" style="width:400px; height:400px">My ability</canvas>
+        </div>
+        <div id="skills-description">
+            <h2>我拥有前端开发，后端开发和数据分析建模的经验。</h2>
+        </div>
+        </div>
+    </div>
+
+    <div id="my-projects">
+        <hr style="min-width: 350px">
+        <div id="project-area">
+        <h2>我的项目经验</h2>
+        <div id="project-divs">
+
+
+            <div id="project1" class="project">
+                <a href="{{ url_for('woolworth_coles_system') }}"><img class='proj-img' id='proj-img1' src="{{ url_for('static', filename='images/woolworth&coles.png') }}" alt="Woolworth&colesExchangeSystem.png"></a>
+                <a href="{{ url_for('woolworth_coles_system') }}" style="text-decoration: none;">伍尔沃斯&科尔斯物品交易管理系统</a>
+            </div>
+            <div id="project2" class="project">
+                <a href="{{ url_for('efficient_similarity_join') }}"><img href="{{ url_for('efficient_similarity_join') }}" class='proj-img' id='proj-img2' src="{{ url_for('static', filename='images/pyspark.jpg') }}" alt="pyspark.jpg"></a>
+                <a href="{{ url_for('efficient_similarity_join') }}" style="text-decoration: none;">基于Pyspark的文本高效相似度链接</a>
+            </div>
+            <div id="project3" class="project">
+                <a href="{{ url_for('kaggle_data_analysis_modeling') }}"><img class='proj-img' id='proj-img3' src="{{ url_for('static', filename='images/kaggle.png') }}" alt="kaggle.jpg"></a>
+                <a href="{{ url_for('kaggle_data_analysis_modeling') }}" style="text-decoration: none;">Kaggle数据分析与建模</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+{%  endblock %}

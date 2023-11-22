@@ -1,0 +1,51 @@
+{% extends "Base.html" %}
+
+{%  block title %}
+    Woolworth&coles Trading And Management System
+{%  endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/woolworth&colesSystem.css')}}">
+    <script src="{{ url_for('static', filename="js/woolworth&colesSystem.js") }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div id="head-div">
+        <img id='small-title-img' style='display:none' src="{{ url_for('static', filename='images/woolworth&colesSmall1.png') }}" alt="woolworth&colesSystem">
+        <div id="head-description">
+            <h1>伍尔沃斯&科尔斯收藏品交换管理系统</h1>
+            <h3>一个关于伍尔沃斯和科尔斯超市物品交易和用户活动管理数据分析系统。</h3>
+            <button id='download-button' type="button" class="btn btn-dark"><i class="bi bi-arrow-right">下载系统设计文档</i></button>
+        </div>
+        <img src="{{ url_for('static', filename='images/woolworth&colesSmall1.png') }}" alt="woolworth&colesSystem">
+    </div>
+    <div id="main-description">
+        <h1>项目背景</h1>
+        <h5>Woolworths和Coles等零售巨头开展的收藏品活动收获巨大受欢迎程度高，吸引顾客收集和交易物品并引入一个<strong>收藏品交换管理系统</strong>，以帮助客户之间的收藏品交换。</h5>
+        <h1>要求和范围</h1>
+        <h5>本系统旨在为客户提供一个无缝的网络交易平台互相收集。通过这样做，它增强了整体的客户体验和促进收藏品活动的参与度。 Woolworths/Coles收藏品交换管理系统包括以下内容功能:</h5>
+        <ul>&#8226;收集者(用户):</ul>
+        <ol>&#9675;配置文件创建:收集者可以创建详细说明其收集的配置文件，包括他们拥有和需要的特定收藏品。</ol>
+        <ol>&#9675;收藏品列表:收藏家可以列出他们愿意交易的收藏品和他们想要收购的物品。</ol>
+        <ol>&#9675;搜索和匹配:收藏家可以搜索特定的收藏品，他们需要和找到与其他拥有这些物品的收藏家匹配。</ol>
+        <ol>&#9675;消息传递系统:消息传递系统使收集器能够进行通信和谈判贸易条款。</ol>
+        <ol>&#9675;交易历史:收藏家可以跟踪他们的交易历史，保持记录成功的交易。</ol>
+        <ul>&#8226;收集活动经理:</ul>
+        <ol>&#9675;发布和广告:管理员可以创建关于新收藏品活动的帖子获得用户的关注。</ol>
+        <ol>&#9675;活动管理:经理可以存档完成的活动。</ol>
+        <ol>&#9675;分析:深入了解客户参与度、交换模式和流行程度收藏品。</ol>
+        <ol>&#9675;用户反馈:收集用户反馈，不断改进交流经验和活动策略。</ol>
+        <ul>&#8226;系统管理员:</ul>
+        <ol>&#9675;用户管理:管理员可以管理用户和管理员帐户,管理员还可以向管理人员提供发布新活动的权限。</ol>
+        <ol>&#9675;活动监控:管理员可以监控和调节活动过程</ol>
+        <h1>技术架构</h1>
+        <div id="tech-div">
+            <div><h5>系统采用B/S架构，前后端分离。前端使用React，JoyUI，DOM等技术，后端使用Flask，Flask_Restx，Yolov8，Flask-mail，JWT等技术，数据库为Sqlite3,以下为系统架构图：</h5></div>
+            <img src="{{ url_for('static', filename='images/woolworth&colesSystemArchitecture.png') }}" alt="woolworth&colesSystemArchitecture.png">
+        </div>
+    </div>
+
+
+
+
+{%  endblock %}
