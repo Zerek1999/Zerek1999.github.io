@@ -83,6 +83,10 @@ body {
     #nav-bar{
         display: none !important;
     }
+    #mobile-navbar{
+        display:flex !important;
+        visibility: visible !important;
+    }
     #contact-me h3{
         font-size: 300% !important;
     }

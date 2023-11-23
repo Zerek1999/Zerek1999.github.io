@@ -36,21 +36,21 @@
 
     </div>
 
-    <nav style='height:10%' id='mobile-navbar' class="navbar bg-body-tertiary fixed-top">
+    <nav style='height:15%; display:none;' id='mobile-navbar' class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">个人简介</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <a style='font-size:300%;' class="navbar-brand" href="#"><img style='height:60px;width:auto;' id='unsw-img' src="{{ url_for('static', filename='images/unsw_logo.png') }}" alt="UNSW"></a>
+            <button style='height:60px;width:100px;' class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">关闭</h5>
+                <h5 style='font-size:200%;' class="offcanvas-title" id="offcanvasNavbarLabel">关于我</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">个人简介</a>
+            <a style='font-size:180%;' class="nav-link active" aria-current="page" href="#">个人简介</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Link</a>

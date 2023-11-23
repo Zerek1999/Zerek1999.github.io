@@ -71,7 +71,7 @@
         justify-content: center !important;
         border-radius: 50% !important;
         overflow: hidden !important;
-        margin-bottom: 15% !important;
+        margin: 15% 0 !important;
         justify-items:center !important;
         align-items: center !important;
     }
@@ -131,7 +131,8 @@
         /*margin-bottom: 7% !important;*/
     }
     #my-radar{
-        height:70% !important;
+        height:auto !important;
+        width:80% !important;
     }
     /*#my-radar #radarChart{*/
     /*    width:50% !important;*/
@@ -141,6 +142,7 @@
     #skills-description{
         width: 90% !important;
         margin-bottom: 7% !important;
+        height: 100% !important;
     }
     #skills-description h2{
         font-size:300% !important;
