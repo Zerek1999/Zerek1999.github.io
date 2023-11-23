@@ -20,7 +20,7 @@
                 <div id="mobile-my-photo" style="display: none"><img src="{{ url_for('static', filename='images/me.jpg') }}" alt="mobile-my-photo"></div>
                 <h1 id="about-me">个人简介</h1>
                 <h3 id="my-introduction">你好我叫蒋子浩，你可也可以叫我Zerek。我专注于IT技术开发和项目管理决策。</h3>
-                <button type="button" class="btn btn-dark"><i class="bi bi-arrow-right">下载我的简历</i></button>
+                <button id='download-button' type="button" class="btn btn-dark"><i class="bi bi-arrow-right">下载我的简历</i></button>
             </div>
 
             <div id="my-photo-div">
@@ -32,7 +32,7 @@
     <div id="my-education">
         <div id="education-description">
             <h2>我毕业于澳大利亚新南威尔士大学（UNSW）。我拥有信息技术硕士学位，我的研究方向是数据科学与工程。</h2>
-        <a href="https://www.handbook.unsw.edu.au/postgraduate/programs/2024/8543?year=2024"><i class="bi bi-mortarboard">查看我的学位信息</i></a>
+        <a href="https://www.handbook.unsw.edu.au/postgraduate/programs/2024/8543?year=2024"><i id='education-link' class="bi bi-mortarboard">查看我的学位信息</i></a>
         </div>
         <div id="quadrangle">
             <img src="{{ url_for('static', filename='images/quadrangle.jpg') }}" alt="UNSW quadrangle">

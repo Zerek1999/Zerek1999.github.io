@@ -16,9 +16,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 70%;
     background-color: #EEE9F7; /* 斜线的颜色，可以根据需要修改 */
-    clip-path: polygon(0 0, 30% 0, 50% 80%, 20% 90%, 0 70%, 0 0); /* 修正形状，创建斜线分割 */
+    clip-path: polygon(0 0, 30% 0, 50% 70%, 20% 90%, 0 70%, 0 0); /* 修正形状，创建斜线分割 */
 }
 
 @media only screen and (max-width: 1100px){
@@ -28,7 +28,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 900px !important;
+        height: 100% !important;
+        padding-bottom: 20% !important;
     }
     #head-description{
         display:flex !important;
@@ -36,7 +37,6 @@
         justify-content: center !important;
         align-items: center !important;
         width:90% !important;
-        height: 50% !important;
         margin-top: 0 !important;
         position: relative;
         z-index: 1;
@@ -50,10 +50,12 @@
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        justify-content: center !important;
     }
 
     #description-text h1{
+        font-size: 500% !important;
+    }
+    #description-text h3{
         font-size: 300% !important;
     }
 
@@ -62,22 +64,26 @@
     }
 
     #mobile-my-photo{
-        width:30% !important;
-        height:30% !important;
+        width:50% !important;
+        height:50% !important;
         display: flex !important;
         visibility: visible !important;
         justify-content: center !important;
         border-radius: 50% !important;
         overflow: hidden !important;
-        margin-bottom: 8% !important;
+        margin-bottom: 15% !important;
         justify-items:center !important;
         align-items: center !important;
     }
     #mobile-my-photo img{
-        width:100% !important;
-        height:100% !important;
+        width:300px !important;
+        height:300px !important;
         border-radius: 50% !important;
         object-fit: cover !important;
+    }
+
+    #download-button{
+        display:none !important;
     }
     #project-area{
         display:flex;
@@ -87,11 +93,17 @@
         text-align: center;
     }
     #my-education{
-        padding:5% 5% !important;
+        padding:7% 5% !important;
         align-items: center !important;
         text-align: center !important;
         justify-content: center !important;
         flex-direction: column !important;
+    }
+    #my-education h2{
+        font-size: 300% !important;
+    }
+    #education-link{
+        font-size: 200% !important;
     }
 
     #education-description{
@@ -115,20 +127,28 @@
 
     #skill-div{
         padding:0 !important;
-        height:600px !important;
+        height:100% !important;
+        /*margin-bottom: 7% !important;*/
     }
-    /*#my-radar{*/
-    /*    width:70% !important;*/
-    /*}*/
+    #my-radar{
+        height:70% !important;
+    }
     /*#my-radar #radarChart{*/
     /*    width:50% !important;*/
     /*    height:auto !important;*/
     /*}*/
 
     #skills-description{
-        width: 100% !important;
+        width: 90% !important;
+        margin-bottom: 7% !important;
+    }
+    #skills-description h2{
+        font-size:300% !important;
     }
 
+    #project-area h2{
+        font-size: 300% !important;;
+    }
     #my-projects{
         padding: 0 !important;
     }
@@ -141,7 +161,7 @@
         height:auto !important;
     }
     .project a{
-        font-size: 150% !important;
+        font-size: 200% !important;
     }
 
 
