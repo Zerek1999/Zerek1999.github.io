@@ -53,6 +53,7 @@
         justify-content: center;
         align-items: center;
         justify-items: center;
+        height: 100% !important;
     }
     #head-div img{
         display:none;
@@ -60,10 +61,10 @@
     #small-title-img{
         visibility: visible !important;
         display:flex !important;
-        width:auto !important;
-        height:200px !important;
+        width:60% !important;
+        height:auto !important;
         margin:0 !important;
-        margin-top: 15% !important;
+        margin-top: 35% !important;
         overflow: hidden !important;
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 10% 100%, 0% 70%, 20% 0) !important;
         /*border-radius: 25% !important;*/
@@ -110,7 +111,7 @@
     }
 
     .pro{
-        width:300px !important;
+        width:100% !important;
 
     }
 

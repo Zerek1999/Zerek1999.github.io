@@ -22,7 +22,7 @@
     width: 100%;
     height: 100%;
     background-color: #FFDC00; /* 斜线的颜色，可以根据需要修改 */
-    clip-path: polygon(0 0, 30% 0, 50% 80%, 20% 90%, 0 70%, 0 0); /* 修正形状，创建斜线分割 */
+    clip-path: polygon(0 0, 30% 0, 50% 70%, 20% 90%, 0 70%, 0 0); /* 修正形状，创建斜线分割 */
 }
 
 #head-div #head-description {
@@ -54,6 +54,7 @@
         justify-content: center;
         align-items: center;
         justify-items: center;
+        height:100% !important;
     }
     #head-div img{
         display:none;
@@ -61,8 +62,8 @@
     #small-title-img{
         visibility: visible !important;
         display:flex !important;
-        width:auto !important;
-        height:45% !important;
+        width:60% !important;
+        height:auto !important;
         margin:0 !important;
         margin-top: 35% !important;
         overflow: hidden !important;
@@ -71,6 +72,9 @@
     }
     #head-description{
         margin: 5% 0 !important;
+    }
+    #download-button{
+        display:none !important;
     }
     #tech-div img{
         width:100% !important;

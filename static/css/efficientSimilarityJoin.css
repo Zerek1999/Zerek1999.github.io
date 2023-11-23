@@ -52,6 +52,7 @@
         justify-content: center;
         align-items: center;
         justify-items: center;
+        height: 100% !important;
     }
     #head-div img{
         display:none;
@@ -59,8 +60,8 @@
     #small-title-img{
         visibility: visible !important;
         display:flex !important;
-        width:auto !important;
-        height:45% !important;
+        width:60% !important;
+        height:auto !important;
         margin:0 !important;
         margin-top: 35% !important;
         overflow: hidden !important;
@@ -69,6 +70,7 @@
     }
     #head-description{
         margin: 5% 0 !important;
+        
     }
     #tech-div img{
         width:100% !important;
@@ -83,6 +85,10 @@
         font-size: 200% !important;
         font-weight: bolder;
     }
+    #main-description img{
+        width:100% !important;
+        height:auto !important;
+    }
     #main-description h5{
         font-size: 180% !important;
     }
@@ -92,7 +98,9 @@
     #main-description ol{
         font-size: 150% !important;
     }
-
+    #download-button{
+        display:none !important;
+    }
 
 }
 
