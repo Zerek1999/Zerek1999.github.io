@@ -113,7 +113,7 @@
 
     #quadrangle{
         width:100% !important;
-        height: 400px !important;
+        height: 20% !important;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0) !important;
     }
 
